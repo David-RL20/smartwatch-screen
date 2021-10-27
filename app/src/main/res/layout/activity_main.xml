@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:padding="8dp">
+
+    <ImageButton
+        android:id="@+id/start"
+        style="@style/rounded_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/icons8_play_30"
+        android:text="@string/start"
+        android:textFontWeight="700"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/counter"
+        tools:src="@drawable/icons8_play_30" />
+
+    <Button
+        android:id="@+id/sep"
+        style="@style/distance_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_date_background"
+        android:text="Sep 2"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/counter"
+        app:layout_constraintEnd_toEndOf="@+id/start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+    <Button
+        android:textFontWeight="700"
+        android:id="@+id/counter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/btn_time_background"
+        android:textSize="24dp"
+        style="@style/rounded_button"
+        android:text="10 \n  09"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="PACE"
+        android:textFontWeight="600"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/sep"
+        app:layout_constraintTop_toBottomOf="@+id/sep" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Last run"
+        android:textFontWeight="600"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2 days ago "
+        android:textColor="@color/btn_solid"
+        android:textFontWeight="600"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="MI"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="7'34&quot;"
+        android:textColor="@color/btn_solid"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="3.25"
+        android:textColor="@color/btn_solid"
+        android:textFontWeight="600"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:text="“Becoming a great trainer isn’t about learning 10,000 different exercises.”"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.wear.widget.BoxInsetLayout>

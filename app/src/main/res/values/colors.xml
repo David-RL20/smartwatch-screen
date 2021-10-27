@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_solid"> #A4DE02</color>
+    <color name="btn_solid_font">#000000</color>
+</resources>
